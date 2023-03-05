@@ -1,0 +1,1259 @@
+    @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400&display=swap');
+     :root {
+        /* ========== Colors ========= */
+        --blue: #287bff;
+        --white: #fff;
+        --dark-white: #f5f5f5;
+        --black: #222;
+        --gray: #999;
+        --green: #29fd53;
+        --blue: #287bff;
+        --white: #fff;
+        --grey: #f5f5f5;
+        --black1: #222;
+        --black2: #999;
+        /* ========== Fonts ========= */
+        --body-font: 'Almarai', sans-serif;
+        --large-font-size: 1.5rem;
+        --medium-font-size: 1.2rem;
+        --normal-font-size: 0.938rem;
+    }
+    /* ===================== Base ==================== */
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: var(--body-font);
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        direction: rtl;
+        font-size: var(--normal-font-size);
+        background-color: var(--white);
+        color: var(--black);
+    }
+    /* ========================= header ============================= */
+    /* ========================= header ============================= */
+    /* ========================= header ============================= */
+    /* ========================= header ============================= */
+    /* ========================= header ============================= */
+
+    input, textarea{
+        border: 1px solid #d1d1d1;
+        transition: all 0.3s;
+    }
+    input:focus, textarea:focus{
+        box-shadow: 0 0 10px #d2d2d2;
+        outline: none;
+    }
+    /* .cke_in77 {
+        visibility: inherit;
+        width: 90%; 
+        margin: 0 auto;
+    } */
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999999;
+        background-color: var(--blue);
+        transition: 0.4s;
+    }
+    
+    .nav {
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .nav_img {
+        width: auto;
+        color: var(--grey);
+        border-right: 3px solid var(--green);
+        padding-right: 3px;
+        font-size: 1rem;
+        font-weight: 600;
+
+    }
+    
+    .nav_logo {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: var(--dark-white);
+        font-weight: 600;
+        padding-left: 3px;
+        border-left: 3px solid var(--green);
+    }
+    
+    .nav_list,
+    .nav_link {
+        list-style: none;
+        display: flex;
+    }
+    
+    .nav_link {
+        text-decoration: none;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0.25rem;
+        color: var(--dark-white);
+        font-weight: 600;
+        padding: 3px;
+    }
+    
+    .nav_name {
+        opacity: 0.5;
+        transition: 0.4s;
+    }
+    
+    .nav_icon {
+        opacity: 0.5;
+        font-size: 1.35rem;
+        transition: 0.4s;
+    }
+    
+    .nav_item.activated .nav_icon {
+        opacity: 1;
+    }
+    
+    .nav_item.activated .nav_name {
+        opacity: 1;
+    }
+    
+    .nav_item.activated {
+        border-bottom: 4px solid var(--green);
+    }
+    
+    .nav_name:hover {
+        opacity: 1;
+    }
+    /* ========================= call us ============================= */
+    /* ========================= call us ============================= */
+    /* ========================= call us ============================= */
+    /* ========================= call us ============================= */
+    /* ========================= call us ============================= */
+    
+    .message {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+        background-color: var(--white);
+        box-shadow: 0 0 10px;
+    }
+    
+    .message p {
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: 900;
+        margin-bottom: 50px;
+    }
+    
+    .name {
+        width: 100%;
+    }
+    
+    .name input,
+    .name textarea {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 7px;
+    }
+    
+    .name textarea {
+        height: 180px;
+    }
+    
+    .message input::placeholder,
+    .message textarea::placeholder {
+        color: var(--black);
+    }
+    
+    .btn {
+        margin: 0 auto;
+        width: 25%;
+    }
+    
+    .btn button {
+        color: var(--white);
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: var(--blue);
+        border-radius: 3px;
+        box-shadow: 5px 5px 5px var(--black);
+        font-weight: 900;
+        cursor: pointer;
+        transition: 0.05s;
+    }
+    
+    .btn button:active {
+        transform: translateY(3px);
+        box-shadow: 0px 0px 0px var(--black);
+    }
+    
+    .info {
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--blue);
+        height: 100%;
+    }
+    
+    .info p {
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: 900;
+        margin-bottom: 50px;
+    }
+    
+    .info1 {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .info1 ion-icon {
+        font-size: 2em;
+        margin-left: 10px;
+    }
+    
+    .call-us-main {
+        font-size: 0.9em;
+        display: flex;
+        align-items: center;
+    }
+    
+    .contain-call {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    #d1 {
+        width: 100%;
+    }
+    
+    #d2 {
+        width: 100%;
+    }
+    /* ========================= profile ============================= */
+    /* ========================= profile ============================= */
+    /* ========================= profile ============================= */
+    /* ========================= profile ============================= */
+    /* ========================= profile ============================= */
+    
+    .profileContainer {
+        margin-top: 5rem;
+        width: 100%;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pages {
+        box-shadow: 0px 0px 3px #00000066;
+        margin: 0 auto;
+        position: relative;
+        transition: all 0.4s;
+        display: flex;
+        align-items: center;
+    }
+    
+    .pages .page {
+        box-shadow: -7px -7px 7px 7px white, 7px 7px 7px 7px #00000044;
+        min-width: 100%;
+        padding: 10px 15px 20px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .brand-logo {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .page h2 {
+        color: #333333;
+    }
+    
+    .pages .page .input:not(#check) {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 30px;
+    }
+    
+    #check {
+        width: 100%;
+        padding: 0 30px;
+    }
+    
+    .pages .page select option {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .pages .page input.text,
+    .pages .page select {
+        margin: 20px 0;
+        background: #f5ffff;
+        border: none;
+        box-shadow: 0px 0px 1px 1px #00000044;
+        border-radius: 4px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0px 10px;
+        color: rgba(0, 0, 0, 0.5);
+        outline: none;
+    }
+    
+    .pages .page input[type=submit] {
+        margin-top: 15px;
+        background: #E60023;
+        color: #f6f7f9;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px #00000044;
+        transform: translateY(-3px);
+    }
+    
+    .pages .page input[type=submit]:active {
+        transform: translateY(0px);
+    }
+    
+    .table tr:nth-child(odd) {
+        background-color: #22222222;
+    }
+    
+    .table tr:nth-child(1) {
+        background-color: var(--blue);
+        border: 1px solid var(--black);
+    }
+    /* ======================== use less ============================ */
+    
+    body {
+        background-color: whitesmoke;
+    }
+    
+    .section_title {
+        border-radius: 3px;
+        box-shadow: -8px -8px 8px white, 8px 8px 10px #22222244;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1.1rem;
+        text-align: center;
+        color: var(--black);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    /* ============================= admin side bar =================================== */
+    
+    .navContainer {
+        margin-top: 4.5rem;
+        position: relative;
+        z-index: 999;
+        width: 100%;
+    }
+    
+    .navigation {
+        position: fixed;
+        width: 80px;
+        height: calc(100% - 4.5rem);
+        background: var(--blue);
+        border-right: 10px solid var(--blue);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    
+    .navigation.slid1 {
+        width: 250px;
+    }
+    
+    .navigation ul {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        width: 100%;
+    }
+    
+    .navigation ul li {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        list-style: none;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    
+    .navigation ul li.hovered {
+        background: var(--dark-white);
+    }
+    
+    .tcc {
+        margin-top: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        color: var(--white);
+    }
+    
+    .title {
+        position: relative;
+        display: block;
+        padding: 0 20px;
+        height: 60px;
+        line-height: 60px;
+        white-space: nowrap;
+        text-align: start;
+    }
+    
+    .navigation ul li a {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--white);
+    }
+    
+    .navigation ul li.hovered a {
+        color: var(--blue);
+    }
+    
+    .navigation ul li a .icon {
+        position: relative;
+        display: block;
+        min-width: 60px;
+        height: 60px;
+        line-height: 75px;
+        text-align: center;
+    }
+    
+    .navigation ul li a .icon ion-icon {
+        position: relative;
+        z-index: 999;
+        font-size: 1.75em;
+    }
+    
+    .navigation ul li.hovered a::before {
+        content: '';
+        position: absolute;
+        background: var(--blue);
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: -50px;
+        border-radius: 50%;
+        box-shadow: -35px 35px 0 10px var(--dark-white);
+    }
+    
+    .navigation ul li.hovered a::after {
+        content: '';
+        position: absolute;
+        background: var(--blue);
+        width: 50px;
+        height: 50px;
+        left: 0;
+        bottom: -50px;
+        border-radius: 50%;
+        box-shadow: -35px -35px 0 10px var(--dark-white);
+    }
+    
+    .switch {
+        margin-left: 10px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .switch2 {
+        margin-left: 10px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .switch ion-icon {
+        font-size: 2.5em;
+    }
+    
+    .switch2 ion-icon {
+        font-size: 2.5em;
+    }
+    
+    .main {
+        position: relative;
+        width: calc(100% - 80px);
+        right: 80px;
+        height: calc(100% - 4.5rem);
+        background-color: var(--dark-white);
+        transition: 0.5s;
+    }
+    
+    .main279 {
+        position: relative;
+        width: 100%;
+        height: calc(100% - 4.5rem);
+        background-color: var(--dark-white);
+        transition: 0.5s;
+    }
+    
+    .main.slid2 {
+        width: calc(100% - 250px);
+        right: 250px;
+    }
+    /* ============================= exam manegment system =================================== */
+    
+    #li2,
+    #li4 {
+        cursor: pointer;
+    }
+    
+    .sub_seas {
+        position: absolute;
+        top: 4.5rem;
+        background-color: #287bff77;
+        padding: 10px;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 0 7px 3px #00000044;
+    }
+    
+    .sub_seas_hiddenS,
+    .sub_seas_hiddenH {
+        height: 0;
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    hr {
+        border: none;
+        background-color: var(--green);
+        height: 4px;
+    }
+    
+    .sub_seas details {
+        margin: 10px 0;
+    }
+    
+    .sub_seas details summary {
+        transition: 0.1s;
+        padding: 5px;
+        font-size: var(--medium-font-size);
+        font-weight: 900;
+        cursor: pointer;
+    }
+    
+    .sub_seas details summary:hover {
+        cursor: pointer;
+        background-color: var(--dark-white);
+        color: var(--blue);
+        border-radius: 5px;
+    }
+    
+    .sub_seas details a {
+        position: relative;
+        transition: 0.1s;
+        padding: 5px;
+        display: block;
+        margin: 10px 15px 7px 0;
+        font-size: 1.09em;
+        color: var(--dark-white);
+        text-decoration: none;
+    }
+    
+    .sub_seas details a:hover {
+        background-color: var(--dark-white);
+        color: var(--blue);
+        border-radius: 5px;
+    }
+    
+    .mark_main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: calc(100vh - 4.5rem);
+    }
+    
+    .fieldset1 {
+        border: 1px solid;
+        width: 50%;
+        display: inline-grid;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: -5px -5px 10px 5px white, 5px 5px 10px 3px #00000044;
+    }
+    
+    .exam_title {
+        width: 100%;
+        height: 50px;
+        background-color: #48339d;
+        color: var(--dark-white);
+        padding: 15px;
+    }
+    
+    .exam_title span {
+        height: 20px;
+        border-right: 4px solid var(--green);
+        padding-right: 5px;
+    }
+    
+    .stu_info1 legend {
+        border: 2px solid var(--blue);
+        background-color: var(--blue);
+        color: var(--dark-white);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .fieldset1 legend span,
+    .stu_info1 legend span {
+        padding: 4px;
+        border-right: 4px solid var(--green);
+    }
+    
+    .fieldset1 input,
+    .stu_info1 input {
+        height: 30px;
+        width: 100px;
+        text-align: center;
+        /* padding: 0 20px; */
+        font-size: var(--normal-font-size);
+    }
+    
+    .fieldset1 .indiv {
+        border-radius: 5px;
+        padding: 5px;
+        padding-right: 20px;
+        background-color: #00000022;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .stu_info1 .indiv {
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #00000022;
+        margin: 5px;
+    }
+    
+    .stu_info1 .indiv .indiv1 {
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #00000022;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .btn_div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+    }
+    
+    .btn_div .sub_btn1,
+    .btn_div1 {
+        position: relative;
+        transition: 0.1s;
+        background-color: var(--blue);
+        color: var(--dark-white);
+        font-size: 1.09em;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        height: 35px;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .btn_div .sub_btn1:active,
+    .btn_div1:active {
+        transform: translateY(2px);
+    }
+    
+    .stu_info1 {
+        border: 1px solid;
+        width: 50%;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: -5px -5px 10px 5px white, 5px 5px 10px 3px #00000044;
+    }
+    
+    .indiv_select {
+        padding: 8px;
+    }
+    
+    .staff .staffinfo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        box-shadow: 0 0 10px #00000080;
+    }
+    
+    .staff .staffinfo .staffimg {
+        width: 20%;
+        margin-left: 3%;
+        padding: 1%;
+    }
+    
+    .staff .staffinfo .staffimg img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    .staff .staffinfo .stafftxt {
+        display: flex;
+        width: 100%;
+        line-height: 2em;
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    
+    .sta-f {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: calc(100vh - 6rem);
+        margin: 20px 0;
+    }
+    
+    .sta-ft {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 50px 0;
+    }
+    
+    .staff-inp {
+        position: relative;
+        padding: 2%;
+        margin: 3%;
+        width: 50%;
+        height: 90%;
+        box-shadow: 0 0 10px #00000080;
+        display: flex;
+        justify-content: center;
+        border-radius: 3px;
+    }
+    
+    .staff-inp1 {
+        position: relative;
+        padding: 2%;
+        margin: 3%;
+        width: 50%;
+        box-shadow: 0 0 10px #00000030;
+        /* display: flex;
+        justify-content: flex-start;
+        border-radius: 3px; */
+    }
+    
+    .staff-inp h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .staff-inp form {
+        width: 100%;
+        padding: 0 50px;
+    }
+    
+    .staff-inp input:not(#check) {
+        display: block;
+        width: 80%;
+        font-size: 1.1em;
+        padding: 13px;
+        margin: 15px auto;
+    }
+    
+    .staff-inp .ida {
+        background-color: var(--blue);
+        border: none;
+        border-radius: 3px;
+        font-size: 1.2em;
+        font-weight: 900;
+        transition: all 0.15s;
+        cursor: pointer;
+        color: var(--dark-white);
+    }
+    
+    .staff-inp .ida:hover {
+        background-color: #287bff80;
+    }
+    
+    .staff-inp .ida:active {
+        transform: translateY(3px);
+    }
+    
+    .staff-inp label:not(#lab) {
+        display: block;
+        width: 80%;
+        font-size: 1.1em;
+        margin: 0px auto;
+    }
+    
+    #tm {
+        position: absolute;
+        bottom: 100px;
+        margin: 0 auto;
+        transition: all 1s;
+    }
+    
+    .tab {
+        border: 3px solid #287bff;
+        width: 50%;
+        margin: 0 25px;
+        font-weight: 900;
+        border-collapse: collapse;
+    }
+    .tab1{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .tab td,
+    .tab th {
+        padding: 5px;
+        border: 1px solid #287bff;
+    }
+    
+    .del_btn {
+        text-align: center;
+        background-color: #E60023;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: whitesmoke;
+        padding: 3px 6px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.1s;
+    }
+    
+    .del_btn:hover {
+        background-color: whitesmoke;
+        color: #E60023;
+    }
+    
+    .alter_btn {
+        background-color: #eed202;
+        /* background-color: var(--green); */
+    }
+    
+    .alter_btn:hover {
+        background-color: whitesmoke;
+        color: #eed202;
+    }
+    .table a{
+        text-decoration: none;
+        color: var(--blue);
+    }
+    .in149{
+    margin: 0 auto 15px auto;
+    background: #f5ffff;
+    border: none;
+    box-shadow: 0px 0px 1px 1px #00000044;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    }
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ============ Responsive Screen =========== Responsive Screen =========== */
+    /* ==================== very small screen 300px max ================== */
+    /* ==================== very small screen 300px max ================== */
+    /* ==================== very small screen 300px max ================== */
+    /* ==================== very small screen 300px max ================== */
+    
+    @media screen and (max-width: 300px) {
+        /* ========================= header ============================= */
+        .nav_name {
+            display: none;
+        }
+        .nav_list {
+            justify-content: space-around;
+        }
+        /* ========================= library ============================= */
+        /* ========================= profile ============================= */
+        .pages {
+            width: 240px;
+        }
+        .det_table {
+            /* border-right: 3px solid var(--green); */
+            background-color: var(--dark-white);
+            margin: 0 auto 20px auto;
+            padding: 5px;
+            font-size: var(--normal-font-size);
+        }
+        .table {
+            font-weight: 300;
+            width: 100%;
+            text-align: center;
+        }
+        .table td {
+            width: 20%;
+            height: 45px;
+        }
+        .det_title {
+            font-size: var(--medium-font-size);
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .student_info {
+            width: 100%;
+            line-height: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .student_info tr,
+        .student_info td {
+            border: 1px solid;
+        }
+        .student_info tr td:nth-child(1) {
+            padding-right: 10px;
+        }
+        .student_info tr td:nth-child(2) {
+            text-align: center;
+        }
+        /* ========================= staff ============================= */
+        /* ========================= call us ============================= */
+        /* ========================= exam ============================= */
+    }
+    /* ==================== small screen start from 300px ================== */
+    /* ==================== small screen start from 300px ================== */
+    /* ==================== small screen start from 300px ================== */
+    /* ==================== small screen start from 300px ================== */
+    /* ==================== small screen start from 300px ================== */
+    
+    @media screen and (min-width: 300px) {
+        /* ========================= header ============================= */
+        .nav_list {
+            justify-content: space-around;
+        }
+        /* ========================= library ============================= */
+        /* ========================= profile ============================= */
+        .det_table {
+            /* border-right: 3px solid var(--green); */
+            background-color: var(--dark-white);
+            margin: 0 auto 20px auto;
+            padding: 5px;
+            font-size: var(--normal-font-size);
+            background-color: #f5ffff;
+            box-shadow: 0 0 10px 1px #00000044;
+        }
+        .table {
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+        }
+        /* .table tr,
+.table td
+{
+    border: 1px solid;
+} */
+        .table td {
+            width: 20%;
+            height: 45px;
+        }
+        .det_title {
+            font-size: var(--medium-font-size);
+            font-weight: 600;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .student_info {
+            width: 100%;
+            line-height: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .student_info tr,
+        .student_info td {
+            border: 1px solid;
+        }
+        .student_info tr td:nth-child(1) {
+            /* padding-right: 10px; */
+            text-align: center;
+        }
+        .student_info tr td:nth-child(2) {
+            text-align: center;
+        }
+        /* ========================= staff ============================= */
+        /* ========================= call us ============================= */
+        /* ========================= exam ============================= */
+    }
+    /* ==================== small screen 570px max ================== */
+    /* ==================== small screen 570px max ================== */
+    /* ==================== small screen 570px max ================== */
+    /* ==================== small screen 570px max ================== */
+    /* ==================== small screen 570px max ================== */
+    
+    @media screen and (max-width: 570px) {
+        /* ========================= header ============================= */
+        /* ========================= library ============================= */
+        /* ========================= profile ============================= */
+        /* ========================= staff ============================= */
+        .staff .staffinfo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            box-shadow: 0 0 10px #00000080;
+        }
+        .staff .staffinfo .staffimg {
+            width: 25%;
+            margin-left: 3%;
+            padding: 1%;
+        }
+        .staff .staffinfo .staffimg img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .staff .staffinfo .stafftxt {
+            display: flex;
+            width: 100%;
+            line-height: 1.8em;
+            font-size: 1.4em;
+            font-weight: 900;
+        }
+        /* .staff {
+        width: 80%;
+        margin: 5rem auto;
+    } */
+        /* ========================= call us ============================= */
+        .call-us-main {
+            width: 100%;
+        }
+        /* ========================= exam ============================= */
+    }
+    /* ==================== medium screen start from 570px ================== */
+    /* ==================== medium screen start from 570px ================== */
+    /* ==================== medium screen start from 570px ================== */
+    /* ==================== medium screen start from 570px ================== */
+    /* ==================== medium screen start from 570px ================== */
+    
+    @media screen and (min-width: 570px) {
+        /* ========================= header ============================= */
+        .nav_list {
+            justify-content: center;
+            column-gap: 3rem;
+        }
+        /* ========================= library ============================= */
+        /* ========================= profile ============================= */
+        .pages {
+            width: 400px;
+        }
+        .studentGrades,
+        .staff {
+            width: 80%;
+            margin: 5rem auto;
+        }
+        /* ========================= staff ============================= */
+        /* ========================= call us ============================= */
+        .call-us-main {
+            width: 70%;
+            margin: 0 auto;
+        }
+        /* ========================= exam ============================= */
+    }
+    /* ==================== medium screen 767px max ================== */
+    /* ==================== medium screen 767px max ================== */
+    /* ==================== medium screen 767px max ================== */
+    /* ==================== medium screen 767px max ================== */
+    /* ==================== medium screen 767px max ================== */
+    
+    @media screen and (max-width: 767px) {
+        /* ========================= header ============================= */
+        .nav_name {
+            font-size: 0.75em;
+        }
+        .nav_item.activated .nav_icon {
+            transform: translateY(-3px);
+        }
+        .container {
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+        }
+        #li7 {
+            display: none;
+        }
+        .nav_menu {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: var(--blue);
+            box-shadow: 0 -1px 10px #00000044;
+            width: 100%;
+            height: 4rem;
+            padding: 0 1rem;
+            display: grid;
+            align-content: center;
+            border-radius: 1.25rem 1.25rem 0 0;
+            transition: 0.4s;
+        }
+        /* ========================= library ============================= */
+        /* ========================= profile ============================= */
+        /* ========================= staff ============================= */
+        .staff .staffinfo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            box-shadow: 0 0 10px #00000080;
+        }
+        .staff .staffinfo .staffimg {
+            width: 25%;
+            margin-left: 3%;
+            padding: 1%;
+        }
+        .staff .staffinfo .staffimg img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .staff .staffinfo .stafftxt {
+            display: flex;
+            width: 100%;
+            line-height: 1.8em;
+            font-size: 1.1em;
+            font-weight: 900;
+        }
+        /* ========================= call us ============================= */
+        .call-us-main {
+            margin-top: 4rem;
+        }
+        .contain-call {
+            width: 100%;
+            flex-direction: column;
+        }
+        .message {
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        .info {
+            width: 90%;
+            margin-bottom: 5rem;
+            border-radius: 20px;
+        }
+        /* ========================= exam ============================= */
+    }
+    /* ==================== large screen start from 767px ================== */
+    /* ==================== large screen start from 767px ================== */
+    /* ==================== large screen start from 767px ================== */
+    /* ==================== large screen start from 767px ================== */
+    /* ==================== large screen start from 767px ================== */
+    
+    @media screen and (min-width: 767px) {
+        /* ========================= header ============================= */
+        .nav_menu {
+            width: 75%;
+        }
+        .nav_list {
+            justify-content: space-around;
+        }
+        .nav {
+            height: 4.5rem;
+        }
+        .nav_img {
+            display: none;
+        }
+        .nav_icon {
+            display: none;
+        }
+        .nav_name {
+            font-size: 1.1rem;
+        }
+        /* ========================= library ============================= */
+        .det_title:hover {
+            color: var(--blue);
+            transition: 0.15s;
+        }
+        .det_table {
+            width: 80%;
+        }
+        /* ========================= profile ============================= */
+        .profileContainer {
+            margin-top: 7rem;
+        }
+        .container {
+            margin-top: 6rem;
+        }
+        .pages {
+            width: 500px;
+        }
+        .table {
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+        /* ========================= staff ============================= */
+        /* ========================= call us ============================= */
+        .call-us-main {
+            margin-top: 6rem;
+            width: 100%;
+        }
+        .contain-call {
+            width: 60%;
+            height: 80vh;
+        }
+        .message {
+            width: 60%;
+        }
+        .info {
+            width: 40%;
+        }
+        /* ========================= exam ============================= */
+    }
